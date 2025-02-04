@@ -3,11 +3,16 @@ name: Mi primer Workflow
 on:
  push:
     branches:
-      -Main
+      - Main
 jobs:
   ejemplo:
     runs-on: ubunto-latest 
+    env:
+      PLATAFORMA: "AWS"
+      REGION: "US-EAST-1"
     steps:
-    -name: Mostrar Mensaje 
-    run: echo "¡Hola, Github Actions!"
+    - name: Mostrar Variables
+      run: |
+        echo "¡Hola, Github Actions!"
+        echo "Región: $REGION"
     
