@@ -11,7 +11,7 @@ jobs:
       PLATAFORMA: "AWS"
       REGION: "US-EAST-1"
     steps:
-    - name: Mostrar Variables
+    - name: Mostrar Variables Cristian
       run: |
         echo "¡Hola, Github Actions!"
         echo "Región: $REGION"
