@@ -1,0 +1,11 @@
+name: mi primer workflow
+on:
+  push:
+    branches:
+     - qa 
+jobs:
+   ejemplo:
+      runs_on: ubuntu-latest
+steps:
+  - name: mostrar mensaje 
+    run: echo "hola, github actions!"
