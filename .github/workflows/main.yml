@@ -4,7 +4,7 @@ on:
  push:
     branches:
       - Main
-      
+
 jobs:
   ejemplo:
     runs-on: ubunto-latest 
@@ -12,8 +12,8 @@ jobs:
       PLATAFORMA: "AWS"
       REGION: "US-EAST-1"
     steps:
-    - name: Mostrar Variables Cristian
+    - name: Mostrar Variables 
       run: |
-        echo "¡Hola, Github Actions!"
+        echo "Plataforma: $PLATAFORMA"
         echo "Región: $REGION"
     
